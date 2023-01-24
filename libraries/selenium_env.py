@@ -1,11 +1,3 @@
-# Author: Dairo Cortes
-# Date: Jun 9 2021
-# Don't forget add the environment variables:
-#	LOAD_BALANCER_NAME
-#	BROWSER_NAME=[chrome, safari, edge, opera, firefox, opera_local]
-# Example:
-#	export LOAD_BALANCER_NAME=http://localhost:4545
-#	export BROWSER_NAME=chrome
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common import desired_capabilities
