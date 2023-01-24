@@ -13,3 +13,4 @@ parse-type==0.5.2
 selenium==4.0.0.a7
 six==1.14.0
 urllib3==1.25.8
+webdriver-manager==3.8.5

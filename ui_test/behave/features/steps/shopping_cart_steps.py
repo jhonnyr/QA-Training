@@ -18,5 +18,5 @@ class LoginSteps(EnvironmentSetup):
 
     @then(u'Buy the item')
     def step_impl (context):
-
-        context.shopping_cart.
+        pass
+        #context.shopping_cart.
