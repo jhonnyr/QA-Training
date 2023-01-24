@@ -15,4 +15,4 @@ class ShoppingCart:
     def click_on_add_to_cart(self):
         mouse.click_on_element(self, "XPATH", self.add_car_button)
 
-    def click
+    #def click
