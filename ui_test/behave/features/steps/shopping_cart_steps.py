@@ -14,7 +14,6 @@ class LoginSteps(EnvironmentSetup):
         context.shopping_cart.click_on_product(product_name)
         allure.attach(context.driver.get_screenshot_as_png(), name="Item_Selected.png", attachment_type=AttachmentType.PNG)
         context.shopping_cart.click_on_add_to_cart()
-        #allure.attach(context.driver.get_screenshot_as_png(), name="Add_cart.png", attachment_type=AttachmentType.PNG)
 
     @then(u'Go to the shopping car and buy the item')
     def step_impl(context):
