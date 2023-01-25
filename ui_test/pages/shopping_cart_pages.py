@@ -1,12 +1,12 @@
 import time
 from libraries import mapping, mouse, forms
+from selenium.webdriver.common.alert import Alert
 
 
 class ShoppingCart:
 
     def __init__(self, driver):
         self.driver = driver
-        self.ale = driver.switch_to_alert()
         self.item_button = "//a[contains(text(),'{}')]"
         self.add_car_button = "//a[contains(text(),'Add to cart')]"
         self.car_button = "//*[@id='cartur']"
@@ -24,8 +24,8 @@ class ShoppingCart:
 
     def click_on_add_to_cart(self):
         mouse.click_on_element(self, "XPATH", self.add_car_button)
-        self.ale.accept()
-        forms.press_enter()
+        Alert(self.driver).accept()
+        # forms.press_enter()
         time.sleep(5)
 
     def click_on_car_option(self):
